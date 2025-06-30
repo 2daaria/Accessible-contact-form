@@ -6,7 +6,6 @@
 }
 
 .radio-group:focus-within {
-	/*border: 1px solid var(--color-grey900);*/
 	border-radius: var(--border-radius-input);
 	border: 1px solid var(--color-green600);
 }
@@ -52,7 +51,7 @@
 
 .radio-label:before {
 	content: "";
-	background-image: url("/images/icon-radio-inactive.svg");
+	background-image: url("../images/icon-radio-inactive.svg");
 	width: 24px;
 	height: 24px;
 	background-size: cover;
@@ -62,7 +61,7 @@
 }
 
 .radio-input:checked + .radio-label:before {
-	background-image: url("/images/icon-radio-selected.svg");
+	background-image: url("../images/icon-radio-selected.svg");
 	width: 24px;
 	height: 24px;
 	background-size: cover;
