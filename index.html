@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="styles/main.css">
+	<title>Contact Us</title>
+</head>
+<body>
+	<main>
+		<div class="container">
+			<h1 class="form-title">Contact Us</h1>
+			<div class="name-wrapper">
+				<div class="input-name-wrapper">
+					<label for="first-name" class="text-label label required">First Name</label>
+					<input type="text" class="text-input" id="first-name" autocomplete="off" required>
+				</div>
+				
+				<div class="input-name-wrapper">
+					<label for="last-name" class="text-label label required">Last Name</label>
+					<input type="text" class="text-input" id="last-name" autocomplete="off" required>
+				</div>
+			</div>
+			<div class="email-wrapper">
+				<label for="email" class="text-label label">Email Address</label>
+				<input type="email" class="text-input email-input" id="email" autocomplete="on" required>
+			</div>
+			
+			<div class="radio-container">
+				<fieldset class="radio-group" id="radio-group">
+					<legend class="radio-title required">Query Type</legend>
+					<div class="radio-container">
+						<label class="radio-wrapper">
+							<input type="radio" class="radio-input" id="general-enquiry" name="query-type" required/>
+							<span class="radio-label label">General Enquiry</span>
+						</label>
+						
+						<label class="radio-wrapper">
+							<input type="radio" class="radio-input" id="support-request" name="query-type" required/>
+							<span class="radio-label label">Support Request</span>
+						</label>
+					</div>
+				</fieldset>
+			</div>
+			
+			<div class="message-wrapper">
+				<label for="message" class="message-label label required">Message</label>
+				<textarea class="message-input" id="message" required></textarea>
+			</div>
+			
+			<div class="consent-wrapper">
+				<input type="checkbox" class="consent-input" id="consent-checkbox" required>
+				<label for="consent-checkbox" class="consent-label">I consent to being contacted by the team</label>
+			</div>
+			
+			<div class="button-wrapper">
+				<button type="submit" class="submit-btn" id="submit-btn">Submit</button>
+			</div>
+		</div>
+	</main>
+	
+	<footer>
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="https://www.frontendmentor.io/profile/2daaria" target="_blank">2daaria</a>.
+		</div>
+	</footer>
+</body>
+</html>
