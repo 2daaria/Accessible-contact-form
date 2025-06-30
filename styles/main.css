@@ -1,0 +1,106 @@
+@import "fonts.css";
+@import "variables.css";
+@import "normalize.css";
+@import "text-fields.css";
+@import "radio-fields.css";
+@import "checkbox.css";
+@import "consent.css";
+@import "message.css";
+@import "toast.css";
+
+body {
+	padding: var(--padding-container-mobile);
+	background-color: var(--color-green200);
+	font-family: "Karla Regular", sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	width: 100%;
+	background-color: var(--color-white);
+	border-radius: var(--border-radius-container);
+	padding: var(--padding-container-mobile);
+}
+
+.form-title {
+	font-family: "Karla Bold", sans-serif;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 100%;
+	letter-spacing: -1px;
+	color: var(--color-grey900);
+	padding-bottom: 32px;
+}
+
+.label {
+	line-height: var(--line-height-base);
+	color: var(--color-grey900);
+	font-weight: 400;
+	font-style: normal;
+}
+
+.submit-btn {
+	width: 100%;
+	height: 59px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: var(--border-radius-input);
+	border: 1px solid var(--color-green600);
+	background-color: var(--color-green600);
+	color: var(--color-white);
+	font-family: "Karla Bold", sans-serif;
+	font-size: 18px;
+	line-height: var(--line-height-base);
+	transition: 0.2s;
+}
+
+.submit-btn:focus-visible {
+	background-color: #063f36;
+	outline: none;
+}
+
+.required::after {
+	content: "";
+	background-image: url("/images/required.svg");
+	width: 7px;
+	height: 24px;
+	position: absolute;
+	margin-left: 8px;
+}
+
+.attribution {
+	text-align: center;
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+.attribution a {
+	color: var(--color-green600);
+}
+
+@media (min-width: 576px) {
+	body {
+		padding: var(--padding-body-tablet);
+	}
+	
+	.container {
+		padding: var(--padding-container-tablet-desktop);
+	}
+}
+
+@media (min-width: 1200px) {
+	body {
+		padding: 128px 0;
+	}
+	
+	.container {
+		width: 100%;
+		max-width: 736px;
+		margin: 0 auto;
+	}
+	
+	.submit-btn:hover {
+		background-color: #063f36;
+	}
+}

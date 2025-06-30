@@ -1,0 +1,23 @@
+:root {
+	--color-grey900: #2A4144;
+	--color-grey500: #86A2A5;
+	--color-white: #FFFFFF;
+	
+	--color-green600: #0C7D69;
+	--color-green200: #E0F1E8;
+	--color-red: #D73C3C;
+	
+	--line-height-base: 150%;
+	
+	--padding-body-mobile: 32px 16px;
+	--padding-body-tablet: 128px 39px;
+	--padding-body-desktop: 128px 0px;
+	
+	--padding-container-mobile: 24px;
+	--padding-container-tablet-desktop: 40px;
+	
+	--input-height: 51px;
+	
+	--border-radius-input: 8px;
+	--border-radius-container: 16px;
+}
