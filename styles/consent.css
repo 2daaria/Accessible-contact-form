@@ -37,7 +37,7 @@
 }
 
 .consent-input:checked + .consent-label:before {
-	background-image: url("/images/checkbox-selected.svg");
+	background-image: url("../images/checkbox-selected.svg");
 	width: 24px;
 	height: 24px;
 	background-size: cover;
