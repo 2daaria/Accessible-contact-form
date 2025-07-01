@@ -1,21 +1,20 @@
 .consent-wrapper {
 	width: 100%;
 	display: flex;
-	margin-bottom: 40px;
 	font-size: 16px;
 	line-height: var(--line-height-base);
 	color: var(--color-grey900);
-}
-
-.consent-wrapper:focus-visible {
-	outline: 1px solid var(--color-green600);
-	border-radius: var(--border-radius-input);
 }
 
 .consent-input {
 	position: absolute;
 	opacity: 0;
 	transition-duration: 0.2s;
+}
+
+.consent-input:focus-visible + .consent-label:before {
+	outline: 1px solid var(--color-green600);
+	border-radius: var(--border-radius-input);
 }
 
 .consent-label {
