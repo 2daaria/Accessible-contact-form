@@ -9,55 +9,120 @@
 </head>
 <body>
 	<main>
-		<div class="container">
-			<h1 class="form-title">Contact Us</h1>
-			<div class="name-wrapper">
-				<div class="input-name-wrapper">
-					<label for="first-name" class="text-label label required">First Name</label>
-					<input type="text" class="text-input" id="first-name" autocomplete="off" required>
+		<div class="toast-container" id="toast" role="status">
+			<div class="success-msg">Message Sent!</div>
+			<div class="thanks">Thanks for completing the form. We’ll be in touch soon!</div>
+		</div>
+		<form action="#">
+			<div class="container">
+				<h1 class="form-title">Contact Us</h1>
+				
+				<div class="name-wrapper">
+					<div class="input-name-wrapper">
+						<label for="first-name" class="text-label label required">First Name</label>
+						<input
+							type="text"
+							class="text-input"
+							id="first-name"
+							autocomplete="off"
+							required
+							aria-describedby="first-name-error"
+						>
+						<div class="error-msg" id="first-name-error" aria-live="polite"></div>
+					</div>
+					
+					<div class="input-name-wrapper">
+						<label for="last-name" class="text-label label required">Last Name</label>
+						<input
+							type="text"
+							class="text-input"
+							id="last-name"
+							autocomplete="off"
+							required
+							aria-describedby="last-name-error"
+						>
+						<div class="error-msg" id="last-name-error" aria-live="polite"></div>
+					</div>
+				</div>
+				<div class="email-wrapper">
+					<label for="email" class="text-label label">Email Address</label>
+					<input
+						type="email"
+						class="text-input email-input"
+						id="email"
+						autocomplete="on"
+						required
+						aria-describedby="email-error"
+					>
+					<div class="error-msg" id="email-error" aria-live="polite"></div>
 				</div>
 				
-				<div class="input-name-wrapper">
-					<label for="last-name" class="text-label label required">Last Name</label>
-					<input type="text" class="text-input" id="last-name" autocomplete="off" required>
+				<div class="radio-container">
+					<fieldset class="radio-group" id="radio-group">
+						<legend class="radio-title required">Query Type</legend>
+						
+						<div class="radio-container">
+							<label class="radio-wrapper">
+								<input
+									type="radio"
+									value="general"
+									class="radio-input"
+									id="general-enquiry"
+									name="query-type"
+									required
+									aria-describedby="query-type-error"
+								>
+								<span class="radio-label label">General Enquiry</span>
+							</label>
+							
+							<label class="radio-wrapper">
+								<input
+									type="radio"
+									value="support"
+									class="radio-input"
+									id="support-request"
+									name="query-type"
+									aria-describedby="query-type-error"
+								>
+								<span class="radio-label label">Support Request</span>
+							</label>
+						</div>
+						<div class="error-msg" id="query-type-error" aria-live="polite"></div>
+					</fieldset>
+				</div>
+				
+				<div class="message-wrapper">
+					<label for="message" class="message-label label required">Message</label>
+					<textarea
+						class="message-input"
+						id="message"
+						required
+						aria-describedby="message-error"
+					></textarea>
+					<div class="error-msg" id="message-error" aria-live="polite"></div>
+				</div>
+				
+				<div class="consent-wrapper">
+					<input
+						type="checkbox"
+						class="consent-input"
+						id="consent"
+						required
+						aria-describedby="consent-error"
+					>
+					<label for="consent" class="consent-label">I consent to being contacted by the team</label>
+				</div>
+				<div class="error-msg" id="consent-error"></div>
+				
+				<div class="button-wrapper">
+					<button
+						type="submit"
+						class="submit-btn"
+						id="submit-btn"
+					>Submit</button>
 				</div>
 			</div>
-			<div class="email-wrapper">
-				<label for="email" class="text-label label">Email Address</label>
-				<input type="email" class="text-input email-input" id="email" autocomplete="on" required>
-			</div>
-			
-			<div class="radio-container">
-				<fieldset class="radio-group" id="radio-group">
-					<legend class="radio-title required">Query Type</legend>
-					<div class="radio-container">
-						<label class="radio-wrapper">
-							<input type="radio" class="radio-input" id="general-enquiry" name="query-type" required/>
-							<span class="radio-label label">General Enquiry</span>
-						</label>
-						
-						<label class="radio-wrapper">
-							<input type="radio" class="radio-input" id="support-request" name="query-type" required/>
-							<span class="radio-label label">Support Request</span>
-						</label>
-					</div>
-				</fieldset>
-			</div>
-			
-			<div class="message-wrapper">
-				<label for="message" class="message-label label required">Message</label>
-				<textarea class="message-input" id="message" required></textarea>
-			</div>
-			
-			<div class="consent-wrapper">
-				<input type="checkbox" class="consent-input" id="consent-checkbox" required>
-				<label for="consent-checkbox" class="consent-label">I consent to being contacted by the team</label>
-			</div>
-			
-			<div class="button-wrapper">
-				<button type="submit" class="submit-btn" id="submit-btn">Submit</button>
-			</div>
-		</div>
+		</form>
 	</main>
 	
 	<footer>
@@ -66,5 +131,7 @@
 			Coded by <a href="https://www.frontendmentor.io/profile/2daaria" target="_blank">2daaria</a>.
 		</div>
 	</footer>
+	
+	<script src="index.js"></script>
 </body>
 </html>
