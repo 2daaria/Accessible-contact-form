@@ -101,6 +101,9 @@ body {
 	}
 	
 	.container {
+		width: 100%;
+		max-width: 736px;
+		margin: 0 auto;
 		padding: var(--padding-container-tablet-desktop);
 	}
 }
@@ -108,12 +111,6 @@ body {
 @media (min-width: 1200px) {
 	body {
 		padding: 128px 0;
-	}
-	
-	.container {
-		width: 100%;
-		max-width: 736px;
-		margin: 0 auto;
 	}
 	
 	.submit-btn:hover {
