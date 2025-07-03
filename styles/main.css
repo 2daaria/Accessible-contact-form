@@ -64,7 +64,7 @@ body {
 
 .required::after {
 	content: "";
-	background-image: url("/images/required.svg");
+	background-image: url("../images/required.svg");
 	width: 7px;
 	height: 24px;
 	position: absolute;
