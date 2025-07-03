@@ -9,8 +9,8 @@ const toast = document.querySelector("#toast");
 
 
 // SHOW/HIDE ERROR-STATE
-function showError(field, message) {
-    document.querySelector(`#${field}-error`).textContent = `${message}`;
+function showError(field, errorText) {
+    document.querySelector(`#${field}-error`).textContent = `${errorText}`;
     document.querySelector(`#${field}-error`).classList.add('error-msg');
     document.querySelector(`#${field}`).classList.add('error');
 }
