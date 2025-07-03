@@ -22,8 +22,8 @@ function clearError(field) {
 }
 
 // EMAIL VALIDATION
-function isValidEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+function isValidEmail(userEmail) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(userEmail);
 }
 
 // MAIN VALIDATION
