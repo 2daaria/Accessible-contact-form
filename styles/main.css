@@ -78,7 +78,7 @@ body {
 }
 
 .attribution a {
-	color: var(--color-green600);
+	color: var(--color-grey900);
 }
 
 .error-msg {
