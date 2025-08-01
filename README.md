@@ -1,4 +1,4 @@
-This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj).
+This is a solution to the [Contact form](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj).
 
 ### Author
 Frontend Mentor - [@2daaria](https://www.frontendmentor.io/profile/2daaria)
